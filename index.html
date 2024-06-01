@@ -37,9 +37,10 @@
 
 
         
-        h2 span.last-of-type {
+        .last-of-type {
     margin-left: -360px;
     animation: slidein 2s infinite;
+    padding-left: 35px;
 }
 
         @keyframes slidein {
@@ -60,8 +61,20 @@
         }
 
         .glow {
-        text-shadow: 0 0 10px rgba(201, 181, 92, 0.8); /* Adjust values for the glow color and size */
+        text-shadow: 0 0 10px rgba(201, 181, 92, 0.8); 
     }
+    
+
+.homeset{
+    font-size: 50px;
+    color: rgb(12, 183, 226);
+
+}
+.homeset h1{
+    font-size: 80px;
+    color: rgb(236, 229, 15);
+    margin-left:-300px;
+}
 
     </style>
     <link href="./style.css">
@@ -105,21 +118,26 @@
     </div>
 </nav>
 <!-- home -->
-<section id="home" class="container-fluid py-5 mt-5" style="background-image: url('./pics/1stsection.jpg'); background-size:945px; background-position: center; height: 500px;">
+<section id="home" class="container-fluid py-5 mt-5" style="background-image: url('./pics/HD-laptopbg.jpg'); background-size:945px; background-position: center; height: 500px;">
     <div class="row justify-content-center align-items-center h-100">
         <div class="col-md-6">
             
-                <h2 style="padding-left: 50px; text-align: left;">
+                <!-- <h2 style="padding-left: 50px; text-align: left;">
                     <span class="last-of-type">Full Stack Web Developer<br>
                     </span> </h2>
-                    <p>I, I'm Sarma<br>
+                   <p>I'm Sarma<br>
                         From Jaffna</p>
-                
+                 -->
+                 <div class="homeset">
+                    <p class="last-of-type glow">Full Stack Web Developer</p>
+                    <h1 >I'm <span> sarma</span><br>
+                    from jaffna</h1>
+                 </div>
             
                
-            <div class="text-center py-5 navbar-nav d-flex justify-content-center">
+            <div class="homeset">
                 
-                    <div >
+                    
                         <a class="btn btn-info btn-outline-dark glow-effect" href="#about">Let's start</a>
                     
                     
@@ -322,7 +340,5 @@
         </div>
         
     </footer>
-
-   
 </body>
 </html>
